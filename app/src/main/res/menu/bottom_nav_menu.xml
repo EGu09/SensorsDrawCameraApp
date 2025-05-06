@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_sensors"
+        android:icon="@drawable/ic_sensors_24"
+        android:title="@string/title_sensors" />
+
+    <item
+        android:id="@+id/navigation_draw"
+        android:icon="@drawable/ic_draw_24"
+        android:title="@string/title_draw" />
+
+    <item
+        android:id="@+id/navigation_camera"
+        android:icon="@drawable/ic_camera_alt_24"
+        android:title="@string/title_camera" />
+
+</menu>

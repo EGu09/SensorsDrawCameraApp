@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:paddingBottom="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/title_sensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_sensors"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/magnetic_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magnetic Field Sensor:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/title_sensors"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/magnetic_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reading value..."
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/magnetic_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/proximity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximity Sensor:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/magnetic_value"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/proximity_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reading value..."
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/proximity_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/accelerometer_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/proximity_value"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/accelerometer_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reading value..."
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/accelerometer_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SensorDrawCamera</string>
+    <string name="title_sensors">Sensors</string>
+    <string name="title_draw">Draw</string>
+    <string name="title_camera">Camera</string>
+    <!-- Additional strings -->
+</resources>

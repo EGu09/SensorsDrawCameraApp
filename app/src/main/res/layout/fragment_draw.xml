@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="?attr/actionBarSize">  <!-- Add padding for the navigation bar -->
+
+    <TextView
+        android:id="@+id/title_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_draw"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/select_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        app:layout_constraintTop_toBottomOf="@id/title_draw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/drawing_image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:background="#EEEEEE"
+        app:layout_constraintTop_toBottomOf="@id/select_image_button"
+        app:layout_constraintBottom_toTopOf="@id/color_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Drawing Canvas" />
+
+    <LinearLayout
+        android:id="@+id/color_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/control_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/black_color_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#000000"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/red_color_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#FF0000"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/green_color_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#00FF00"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/blue_color_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#0000FF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/control_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="56dp">  <!-- Increased margin to rise above navigation bar -->
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
